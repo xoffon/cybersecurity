@@ -1,0 +1,39 @@
+# -*- coding: cp1254 -*-
+
+#Ýdeal kilo hesaplama programý =>
+
+"""
+print "
+1)Erkek
+2)Kadýn
+"
+
+cinsiyet = input("Cinsiyetinizi belirleyiniz! > ")
+if cinsiyet == 1:
+    e_boy = input("Boyunuzu giriniz > ")
+    e_yas = input ("Yaþýnýzý giriniz > ")
+    e_top = (e_boy-100+e_yas/10)*0.9    #Erkek için formül.
+    print "Ýdeal kilonuz >> ", e_top
+    
+if cinsiyet == 2:
+    k_boy = input("Boyunuzu giriniz > ")
+    k_yas = input ("Yaþýnýzý giriniz > ")
+    k_top = (k_boy-100+k_yas/10)*0.8    #Kadýn için formül.
+    print "Ýdeal kilonuz >> ", k_top
+
+
+"""
+
+#hocanýn yaptýðý 
+print "1) erkek"
+print "2) kadýn"
+b = float(raw_input("Boyunuz (cm) : "))
+y = int(raw_input("Yaþýnýz : "))
+c = int(raw_input("Cinsiyetiniz "))
+
+if c == 1:
+    top = (b-100+y/10)*0.9    #Erkek için formül.
+else:
+    top = (b-100+y/10)*0.8    #Kadýn için formül.
+
+print "Ýdeal kilonuz >> ", top
